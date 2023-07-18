@@ -3,4 +3,140 @@
     padding: 0;
     list-style-type: none;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
+
+.text-h2{
+    color: #3A3A3A;
+}
+
+.text-p{
+    color: #3A3A3A;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.space{
+    margin-left: 5px;
+}
+
+.btn{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px; */
+    padding: 10px 20px;
+    border-radius: 41px;
+    background: #E02C6D;
+    border: none;
+    color: white;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #900e3e;
+}
+
+/*--------------- Header style start here  -----------------*/
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .9rem 6rem;
+    background-color: antiquewhite;
+}
+
+.nav-body ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+
+.nav-body li{
+    transition: .4s;
+    cursor: pointer;
+}
+
+.nav-body li:hover{
+    text-decoration: underline;
+    transform: scale(1.2,1.2);
+}
+
+.nav-body li a{
+    color: #3A3A3A;
+
+}
+/*--------------- Header style End here  -----------------*/
+
+
+/*--------------- Banner style start here  -----------------*/
+.banner-container{
+    display: flex;
+    padding: 1.5rem 6rem;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(249, 247, 247);
+
+}
+
+.banner-title{
+    width: 50%;
+    margin-left: -4rem;
+}
+
+.banner-img{
+    background-image: url("./images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    margin-right: 1rem ;
+}
+
+.banner-img img{
+    width: 270px;
+    height: 280px;
+    margin-left: 1.5rem;
+    margin-top: .4rem;
+
+}
+/*--------------- banner style End here  -----------------*/
+
+
+
+
+
+
+
+
+/*--------------- Responsive style start here  -----------------*/
+@media screen and (max-width:576px) {
+    .nav-container{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-body ul{
+    gap: 1.2rem;
+    }
+
+    .banner-container{
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+    .banner-title{
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .text-h2{
+        margin-top: 15px;
+        margin-bottom: .5rem;
+    }
+
+
+}
+/*--------------- responsive style End here  -----------------*/
+
